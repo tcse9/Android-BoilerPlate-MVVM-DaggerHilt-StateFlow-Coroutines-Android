@@ -1,3 +1,7 @@
 package com.taufiq.hiltdemo.model
 
-data class Post(val body:String)
+import com.google.gson.annotations.SerializedName
+
+data class Post(
+    @SerializedName("body") val body:String
+    )
